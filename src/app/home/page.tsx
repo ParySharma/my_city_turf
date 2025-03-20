@@ -7,7 +7,7 @@ const MainHome = () => {
   return (
     <Box>
       {/* header */}
-      <MainPageheader />
+      {/* <MainPageheader /> */}
       {/* banner section */}
       <HomePageBanner />
       {/* about section */}
