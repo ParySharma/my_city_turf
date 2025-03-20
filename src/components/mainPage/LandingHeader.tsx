@@ -24,7 +24,7 @@ const SportsHeader = () => {
       position='fixed'
       color='transparent'
       style={{
-        backgroundColor: 'black',
+        backgroundColor: '#000000ad',
         boxShadow: 'none',
         color: 'white',
       }}
@@ -33,7 +33,7 @@ const SportsHeader = () => {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          marginLeft: { xs: 0, sm: 5, md: 10, lg: 20, xl: 30 },
+          marginLeft: { xs: 0, sm: 5, md: 10, lg: 10, xl: 20 },
         }}
       >
         {/* Left Side - Icon */}
@@ -41,8 +41,8 @@ const SportsHeader = () => {
           <Image
             src='/images/logo.jpg'
             alt='logo'
-            width={80}
-            height={80}
+            width={60}
+            height={60}
             style={{
               borderRadius: '50%',
               objectFit: 'cover',
@@ -67,7 +67,7 @@ const SportsHeader = () => {
               key={item?.label}
               onClick={() => router.push(item?.link)}
               style={{
-                fontWeight: 'bold',
+                fontWeight: 500,
               }}
             >
               {item?.label}
