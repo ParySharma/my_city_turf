@@ -1,0 +1,168 @@
+:root {
+  --theme-color: #0077B3;
+  --theme-opacity-20: #0077B333;
+  --theme-opacity-10: #0077B31a;
+  --theme-opacity-4: #0077B30a;
+  --transparent: transparent;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --body-background-color: #ffffff;
+  --body-text-color: #02457A;
+  --card-background-color: #ffffff;
+  --header-background-color: #E1F5FE;
+  --card-text-color: #001B44;
+  --input-border-color: #0367A6;
+  --primary-button-background-color: #0077B3;
+  --primary-button-back-opacity: #0077B333;
+  --primary-button-text-color: #ffffff;
+  --disable-button-color: #E63946;
+  --heading-color: #0077B3;
+  --heading-opacity: #0077B330;
+  --link-color: #005F8F;
+  --secondary-button-background-color: #023E8A;
+  --secondary-button-text-color: #ffffff;
+  --error-text-color: #E63946;
+  --success-text-color: #50cd89;
+  --border-color: #0367A6;
+  --border-color-light: #7AB8E1;
+  --placeholder-text-color: #0367A6;
+  --input-text-color: #02457A;
+  --box-input-label-color: #757575;
+  --box-input-border-color: #0367A6;
+  --login-label-color: #757575;
+  --back-button-color: #B5B5C3;
+  --light-text-color: #B5B5C3;
+  --module-card-back-color: #B0E0E6;
+  --module-card-light-text-color: #02457A;
+  --dropdown-bg-color: #ffffff;
+  --light-icon-color: #0367A6;
+  --chip-text-color: #000000;
+  --chip-back-color: #f9f9f9;
+  --table-text-color: #001B44;
+  --table-background-color: #0077B30a;
+  --dashboard-plan-card: #B0E0E6;
+  --icon-color: #0077B3;
+  --progress-bar-color: #0077B3;
+  --progress-bar-back-opacity: #0077B31a;
+  --tab-back-color: #E1F5FE;
+  --action-background-color: #7AB8E180;
+  --icon-default-color: #02457A;
+  --shadow-popover: 0px 4px 4px 0px rgba(0, 0, 0, 0.078);
+  --login-background-color: #001B44;
+  --incard-background-color: #f0faff;
+  --fitness-cards-background-color: #f0faff;
+  --flip-card-chip-bgcolor: #ebebeb;
+  --color-circle-progress-stroke: #f5f6fa;
+  --dim-font-text-color: #919191;
+}
+
+[data-theme='dark'] {
+  --theme-color: #66C2FF;
+  --theme-opacity-20: #66C2FF33;
+  --theme-opacity-10: #66C2FF1a;
+  --theme-opacity-4: #66C2FF0a;
+  --transparent: transparent;
+  --body-background-color: #001B44;
+  --body-text-color: #B0E0E6;
+  --icon-default-color: #ffffff;
+  --light-color: #7AB8E1;
+  --card-background-color: #023E8A;
+  --header-background-color: #001A33;
+  --card-text-color: #ffffff;
+  --input-border-color: #66C2FF;
+  --primary-button-background-color: #66C2FF;
+  --primary-button-text-color: #023E8A;
+  --primary-button-back-opacity: #66C2FF40;
+  --disable-button-color: #E63946;
+  --heading-color: #66C2FF;
+  --heading-opacity: #66C2FF30;
+  --link-color: #66C2FF;
+  --secondary-button-background-color: #E1F5FE;
+  --secondary-button-text-color: #023E8A;
+  --error-text-color: #E63946;
+  --success-text-color: #50cd89;
+  --border-color: #0367A6;
+  --border-color-light: #E1F5FE;
+  --placeholder-text-color: #7AB8E1;
+  --input-text-color: #B0E0E6;
+  --box-input-label-color: #828486;
+  --box-input-border-color: #7AB8E1;
+  --light-text-color: #B0E0E6;
+  --module-card-back-color: #001B44;
+  --module-card-light-text-color: #B0E0E6;
+  --dropdown-bg-color: #023E8A;
+  --light-icon-color: #B0E0E6;
+  --chip-text-color: #000000;
+  --chip-back-color: #f9f9f9;
+  --table-text-color: #ffffff;
+  --table-background-color: #66C2FF0a;
+  --dashboard-plan-card: #001B44;
+  --icon-color: #66C2FF;
+  --progress-bar-color: #66C2FF;
+  --progress-bar-back-opacity: #66C2FF1a;
+  --tab-back-color: #0E1012;
+  --action-background-color: #7AB8E180;
+  --shadow-popover: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --login-background-color: #001B44;
+  --incard-background-color: #001B44;
+  --fitness-cards-background-color: #001B44;
+  --flip-card-chip-bgcolor: #023E8A;
+  --color-circle-progress-stroke: #f5f6fa57;
+  --dim-font-text-color: #919191;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  /* overflow: auto !important; */
+}
+
+html,
+body {
+  /* max-width: 100vw; */
+  width: 100%;
+  background: var(--body-background-color) !important;
+  color: var(--body-text-color) !important;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-button-back-opacity) !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-button-background-color) !important;
+}
+
+::selection {
+  background-color: var(--primary-button-background-color);
+  color: var(--primary-button-text-color);
+  fill: var(--primary-button-text-color);
+}
+
+thead th {
+  color: var(--icon-default-color) !important;
+  /* font-size: 16px !important; */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
