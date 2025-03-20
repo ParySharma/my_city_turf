@@ -21,7 +21,7 @@ const SportsHeader = () => {
 
   return (
     <AppBar
-      position='static'
+      position='fixed'
       color='transparent'
       style={{
         backgroundColor: 'black',
@@ -41,8 +41,8 @@ const SportsHeader = () => {
           <Image
             src='/images/logo.jpg'
             alt='logo'
-            width={100}
-            height={100}
+            width={80}
+            height={80}
             style={{
               borderRadius: '50%',
               objectFit: 'cover',
