@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:production": "next build",
-    "start": "next start",
+    "start": "sh server.production.sh",
     "lint": "next lint"
   },
   "dependencies": {
