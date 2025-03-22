@@ -1,7 +1,7 @@
 const nextConfig = {
   reactStrictMode: false,
-  distDir: 'build', // Custom build directory instead of `.next`
-  output: 'standalone', // Standalone mode for SSR & dynamic routes
+  // distDir: 'build', // Custom build directory instead of `.next`
+  output: 'export', // Standalone mode for SSR & dynamic routes
   // experimental: {
   //   appDir: false, // Fix potential issues with standalone mode
   // },
