@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "cp public/_redirects build/public/_redirects",
+    "postbuild": "mkdir build\\public && copy public\\_redirects build\\public\\_redirects",
     "build:production": "next build",
     "start": "sh server.production.sh",
     "lint": "next lint"
