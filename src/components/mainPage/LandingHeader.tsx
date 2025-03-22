@@ -65,7 +65,7 @@ const SportsHeader = () => {
             <Button
               color='inherit'
               key={item?.label}
-              onClick={() => router.push(item?.link)}
+              onClick={() => router.replace(item?.link)}
               style={{
                 fontWeight: 500,
               }}

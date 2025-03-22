@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Epilogue, Roboto } from 'next/font/google';
+import MainPageheader from '@/components/mainPage/LandingHeader';
 import './globals.css';
 import '@/styles/globals.css';
 import '@/styles/common.scss';
@@ -27,7 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        {/* header */}
+        <MainPageheader />
+        {children}
+      </body>
     </html>
   );
 }

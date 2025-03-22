@@ -10,8 +10,6 @@ import MarqueeBannerSection from './sections/MarqueeBanner';
 const MainHome = () => {
   return (
     <Box position={'relative'}>
-      {/* header */}
-      <MainPageheader />
       {/* banner section */}
       <HomePageBanner />
 
