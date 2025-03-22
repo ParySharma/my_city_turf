@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Stack, { StackProps } from '@mui/material/Stack';
 import _map from 'lodash/map';
 import { ArrowDownwardIcon } from '@/images';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import Grid from '@mui/material/Grid2';
@@ -77,8 +78,8 @@ const AccordionComponent = ({
       </Grid>
       <Stack
         sx={{
-          pl: { xs: '50px !important', md: '80px !important' },
-          pr: { xs: '50px !important', md: '80px !important' },
+          pl: { xs: '0px !important', md: '80px !important' },
+          pr: { xs: '0px !important', md: '80px !important' },
           // background: { xs: '#fafafa', md: '#fafafa' },
         }}
       >
@@ -86,9 +87,9 @@ const AccordionComponent = ({
         {mainDescription && (
           <Box maxWidth={'650px'}>
             <Typography
-              mt={3}
+              mt={1}
               variant='body1'
-              color='black'
+              color='white'
               textTransform={'capitalize'}
             >
               {mainDescription}
@@ -96,7 +97,7 @@ const AccordionComponent = ({
           </Box>
         )}
 
-        <Stack {...rest} mt={5}>
+        <Stack {...rest} mt={3}>
           {_map(data, (item, index) => (
             <Accordion
               key={index}
@@ -130,8 +131,11 @@ const AccordionComponent = ({
             >
               <AccordionSummary
                 expandIcon={
-                  <ArrowDownwardIcon
-                    fill={expanded === item?.key ? ' blue' : 'black'}
+                  <ExpandMoreIcon
+                    // color={expanded === item?.key ? ' blue' : 'black'}
+                    sx={{
+                      color: expanded === item?.key ? 'blue' : 'white',
+                    }}
                   />
                 }
                 aria-controls='panel1-content'
@@ -148,16 +152,6 @@ const AccordionComponent = ({
                   accordionHeader(item)
                 ) : (
                   <Fragment>
-                    <Image
-                      src={'/images/accordion-animation.gif'}
-                      alt='accordion-animation'
-                      width={56}
-                      height={56}
-                      style={{
-                        objectFit: 'contain',
-                      }}
-                      unoptimized
-                    />
                     <Stack
                       direction={'row'}
                       // gap={{ xs: 1.75, md: 3 }}
@@ -182,7 +176,7 @@ const AccordionComponent = ({
               </AccordionSummary>
               <AccordionDetails
                 sx={{
-                  padding: '0 16px 24px 16px',
+                  padding: '0 16px 16px 16px',
                 }}
               >
                 {accordioncontant ? (
@@ -199,16 +193,14 @@ const AccordionComponent = ({
                       <Typography
                         variant='h6'
                         fontSize={{ xs: '14px', md: 'inherit' }}
-                        color='var(--color-text-secondary)'
+                        color='white'
                         sx={{
                           opacity: 0,
                         }}
                       >
                         {item?.key}
                       </Typography>
-                      <Typography color='var(--color-header-menu-text)'>
-                        {item?.desc}
-                      </Typography>
+                      <Typography color='white'>{item?.desc}</Typography>
                     </Stack>
                   </Stack>
                 )}

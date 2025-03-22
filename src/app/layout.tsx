@@ -4,6 +4,7 @@ import MainPageheader from '@/components/mainPage/LandingHeader';
 import './globals.css';
 import '@/styles/globals.css';
 import '@/styles/common.scss';
+import Footer from '@/components/Footer/Footer';
 
 const roboto = Epilogue({
   weight: ['300', '400', '500', '700', '900'],
@@ -32,6 +33,7 @@ export default function RootLayout({
         {/* header */}
         <MainPageheader />
         {children}
+        <Footer />
       </body>
     </html>
   );

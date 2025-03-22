@@ -6,6 +6,7 @@ import SportsVolleyballIcon from '@mui/icons-material/SportsVolleyball';
 import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
 import SportsRugbyIcon from '@mui/icons-material/SportsRugby';
 import SportsHockeyIcon from '@mui/icons-material/SportsHockey';
+import { getRandomColor } from './common';
 
 export const TurfOwnerFeatuer = [
   {
@@ -74,47 +75,138 @@ export const SportsList = [
     name: 'Cricket',
     emoji: '🏏',
     icon: <SportsCricketIcon />,
+    color: getRandomColor(),
   },
   {
     key: '02',
     name: 'Badminton',
     emoji: '🏸',
     icon: <SportsTennisIcon />,
+    color: getRandomColor(),
   },
   {
     key: '03',
     name: 'Football',
     emoji: '⚽',
     icon: <SportsSoccerIcon />,
+    color: getRandomColor(),
   },
   {
     key: '04',
     name: 'Basketball',
     emoji: '🏀',
     icon: <SportsBasketballIcon />,
+    color: getRandomColor(),
   },
   {
     key: '05',
     name: 'Volleyball',
     emoji: '🏐',
     icon: <SportsVolleyballIcon />,
+    color: getRandomColor(),
   },
   {
     key: '06',
     name: 'Kabaddi',
     emoji: '🤼',
     icon: <SportsKabaddiIcon />,
+    color: getRandomColor(),
   },
   {
     key: '07',
     name: 'Rugby',
     emoji: '🏉',
     icon: <SportsRugbyIcon />,
+    color: getRandomColor(),
   },
   {
     key: '08',
     name: 'Hockey',
     emoji: '🏒',
     icon: <SportsHockeyIcon />,
+    color: getRandomColor(),
+  },
+];
+
+export const turfsData = [
+  {
+    id: 1,
+    name: 'City Sports Arena',
+    image: '/images/turf1.jpeg',
+    rating: 4.8,
+    price: '₹500/hr',
+    location: 'Mumbai',
+  },
+  {
+    id: 2,
+    name: 'GreenField Turf',
+    image: '/images/turf2.jpeg',
+    rating: 4.7,
+    price: '₹600/hr',
+    location: 'Pune',
+  },
+  {
+    id: 3,
+    name: 'Elite Sports Zone',
+    image: '/images/turf3.jpeg',
+    rating: 4.9,
+    price: '₹700/hr',
+    location: 'Delhi',
+  },
+  {
+    id: 4,
+    name: 'Victory Sports Ground',
+    image: '/images/turf4.jpeg',
+    rating: 4.6,
+    price: '₹550/hr',
+    location: 'Bangalore',
+  },
+  {
+    id: 5,
+    name: 'All Stars Arena',
+    image: '/images/turf4.jpeg',
+    rating: 4.5,
+    price: '₹650/hr',
+    location: 'Hyderabad',
+  },
+  {
+    id: 6,
+    name: 'Champion Turf',
+    image: '/images/turf4.jpeg',
+    rating: 4.9,
+    price: '₹750/hr',
+    location: 'Chennai',
+  },
+  {
+    id: 7,
+    name: 'Ultimate PlayZone',
+    image: '/images/turf4.jpeg',
+    rating: 4.7,
+    price: '₹720/hr',
+    location: 'Ahmedabad',
+  },
+  {
+    id: 8,
+    name: 'Sunshine Sports Arena',
+    image: '/images/turf4.jpeg',
+    rating: 4.8,
+    price: '₹480/hr',
+    location: 'Kolkata',
+  },
+  {
+    id: 9,
+    name: 'Mega Turf Hub',
+    image: '/images/turf4.jpeg',
+    rating: 5.0,
+    price: '₹800/hr',
+    location: 'Jaipur',
+  },
+  {
+    id: 10,
+    name: 'Sports City Ground',
+    image: '/images/turf4.jpeg',
+    rating: 4.6,
+    price: '₹550/hr',
+    location: 'Lucknow',
   },
 ];

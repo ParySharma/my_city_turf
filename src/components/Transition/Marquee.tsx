@@ -10,6 +10,7 @@ const MarqueeTransition = ({
   left,
   effect,
   zIndex,
+  direction,
 }: {
   text: string;
   top?: number | string;
@@ -18,6 +19,7 @@ const MarqueeTransition = ({
   left?: number | string;
   effect?: 'grow' | 'border';
   zIndex?: number;
+  direction?: 'left' | 'right';
 }) => {
   return (
     <Box
@@ -31,12 +33,12 @@ const MarqueeTransition = ({
         zIndex: zIndex,
       }}
     >
-      <Marquee speed={35} gradient={false}>
+      <Marquee speed={35} gradient={false} direction={direction}>
         <Typography
           fontSize='8.75rem'
           sx={{
             display: 'inline-block',
-            fontSize: '80px',
+            fontSize: '100px',
             fontWeight: '600',
             lineHeight: '160%',
             fontFamily: "'Arial', sans-serif",

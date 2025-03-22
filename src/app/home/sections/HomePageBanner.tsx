@@ -1,6 +1,6 @@
 'use client';
 import { Box, Stack, Typography, styled } from '@mui/material';
-import { SportsSoccer, Person } from '@mui/icons-material';
+import * as motion from 'motion/react-client';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -10,9 +10,9 @@ const StyledBox = styled(Box)`
   padding: 10px;
   border-radius: 10px;
   height: 100%;
-  min-height: 300px;
+  max-height: 300px;
   width: 100%;
-  min-width: 300px;
+  max-width: 300px;
   cursor: pointer;
   position: relative;
   overflow: hidden; // Ensure blur effect stays within bounds
@@ -27,10 +27,6 @@ const StyledBox = styled(Box)`
 `;
 
 const HomePageBanner = () => {
-  const [hoverLeft, setHoverLeft] = useState(false);
-  const [hoverRight, setHoverRight] = useState(false);
-  const router = useRouter();
-
   return (
     <Box
       sx={{
@@ -55,10 +51,14 @@ const HomePageBanner = () => {
       <Box
         sx={{
           position: 'absolute',
-          top: '50%',
-          right: '50%',
-          transform: 'translate(50%, -50%)',
-          mt: '2%',
+          top: { xs: '13%', sm: '35%', md: '50%' },
+          right: { xs: '', sm: '50%', md: '50%' },
+          transform: {
+            xs: '',
+            sm: 'translate(50%, -50%)',
+            md: 'translate(50%, -50%)',
+          },
+          mt: { xs: '0%', md: '2%' },
           '::before': {
             content: '""',
             position: 'absolute',
@@ -119,7 +119,7 @@ const HomePageBanner = () => {
         </Typography>
 
         <Stack
-          direction={{ xs: 'column', md: 'row' }}
+          direction={'row'}
           justifyContent={'center'}
           alignItems={'center'}
           spacing={{ xs: 2, md: 10 }}
@@ -128,14 +128,20 @@ const HomePageBanner = () => {
             onClick={() => {
               window.open('/turf/register', '_blank');
             }}
+            height={{ xs: '150px', md: 'inherit' }}
+            width={{ xs: '150px', md: 'inherit' }}
+            sx={{
+              minHeight: { xs: '150px', md: '300px' },
+              minWidth: { xs: '150px', md: '300px' },
+            }}
           >
             <Image
               src='/images/turf-reg.png'
               alt='home-banner'
-              layout='fill'
-              objectFit='cover'
+              fill // This replaces layout='fill'
               quality={100}
               unoptimized
+              style={{ objectFit: 'cover' }} // This replaces objectFit='cover'
             />
           </StyledBox>
 
@@ -143,19 +149,25 @@ const HomePageBanner = () => {
             onClick={() => {
               window.open('/player/register', '_blank');
             }}
+            height={{ xs: '150px', md: 'inherit' }}
+            width={{ xs: '150px', md: 'inherit' }}
+            sx={{
+              minHeight: { xs: '150px', md: '300px' },
+              minWidth: { xs: '150px', md: '300px' },
+            }}
           >
             <Image
               src='/images/player.png'
               alt='home-banner'
-              layout='fill'
-              objectFit='cover'
+              fill
               quality={100}
               unoptimized
+              style={{ objectFit: 'cover' }}
             />
           </StyledBox>
         </Stack>
         <Stack
-          direction={{ xs: 'column', md: 'row' }}
+          direction={'row'}
           alignItems={'center'}
           justifyContent={'space-around'}
         >

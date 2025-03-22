@@ -1,0 +1,15 @@
+.parallax {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scroller {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  gap: 2rem;
+  will-change: transform;
+}

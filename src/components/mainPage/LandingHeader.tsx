@@ -68,6 +68,7 @@ const SportsHeader = () => {
               onClick={() => router.replace(item?.link)}
               style={{
                 fontWeight: 500,
+                fontSize: '1rem',
               }}
             >
               {item?.label}

@@ -8,6 +8,7 @@ const MarqueeBanner = ({
   text = 'TurfReg',
   effect = 'border',
   textColor,
+  fontStyle,
 }: any) => {
   return (
     <Marquee speed={35} gradient={false}>
@@ -21,6 +22,7 @@ const MarqueeBanner = ({
             lineHeight: '160%',
             fontFamily: "'Arial', sans-serif",
             textAlign: 'center',
+            fontStyle: fontStyle,
             color: textColor || 'white',
             ...(effect === 'border'
               ? {
