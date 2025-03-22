@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "mkdir build\\public && copy public\\_redirects build\\public\\_redirects",
+    "postbuild": "cp public/_redirects out/_redirects",
     "build:production": "next build",
     "start": "sh server.production.sh",
     "lint": "next lint"
@@ -19,7 +19,6 @@
     "@mui/x-date-pickers": "^7.6.2",
     "@mui/x-date-pickers-pro": "^7.28.0",
     "@mui/x-tree-view": "^7.28.0",
-    "@netlify/plugin-nextjs": "^5.10.1",
     "@reduxjs/toolkit": "^2.6.1",
     "@tinymce/tinymce-react": "^5.1.1",
     "axios": "^1.8.4",
