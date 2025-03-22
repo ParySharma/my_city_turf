@@ -1,20 +1,38 @@
 'use client';
 import AccordionComponent from '@/components/Accordion';
+import MarqueeTransition from '@/components/Transition/Marquee';
 import { TurfOwnerFeatuer } from '@/utils/mockData';
-import { Grid2, Stack, Typography } from '@mui/material';
+import { Box, Grid2, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 import React, { Fragment } from 'react';
 
 const WhyChooseTurfReg = () => {
   return (
     <Grid2 container spacing={2} mt={10}>
-      <Grid2 size={{ xs: 12, sm: 12, md: 5 }} textAlign={'center'}>
+      <Grid2
+        size={{ xs: 12, sm: 12, md: 5 }}
+        textAlign={'center'}
+        sx={{
+          backgroundColor: 'lighgrey',
+          position: 'relative',
+          zIndex: 2,
+        }}
+      >
+        <MarqueeTransition
+          text='Own Turf Space'
+          bottom={'10%'}
+          effect='grow'
+          zIndex={-1}
+        />
         <Image
           src={'/images/why-choose-furf.jpg'}
           alt='why-choose-turfreg'
           width={500}
           height={500}
           unoptimized
+          style={{
+            mixBlendMode: 'multiply',
+          }}
         />
       </Grid2>
       <Grid2 size={{ xs: 12, sm: 12, md: 7 }}>

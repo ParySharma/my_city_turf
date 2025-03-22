@@ -1,3 +1,12 @@
+import SportsCricketIcon from '@mui/icons-material/SportsCricket';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import SportsTennisIcon from '@mui/icons-material/SportsTennis';
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
+import SportsVolleyballIcon from '@mui/icons-material/SportsVolleyball';
+import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
+import SportsRugbyIcon from '@mui/icons-material/SportsRugby';
+import SportsHockeyIcon from '@mui/icons-material/SportsHockey';
+
 export const TurfOwnerFeatuer = [
   {
     key: '01',
@@ -56,5 +65,56 @@ export const PlayerFeatures = [
     key: '06',
     title: 'Referral System',
     desc: 'Invite your friends and earn rewards for every successful referral.',
+  },
+];
+
+export const SportsList = [
+  {
+    key: '01',
+    name: 'Cricket',
+    emoji: '🏏',
+    icon: <SportsCricketIcon />,
+  },
+  {
+    key: '02',
+    name: 'Badminton',
+    emoji: '🏸',
+    icon: <SportsTennisIcon />,
+  },
+  {
+    key: '03',
+    name: 'Football',
+    emoji: '⚽',
+    icon: <SportsSoccerIcon />,
+  },
+  {
+    key: '04',
+    name: 'Basketball',
+    emoji: '🏀',
+    icon: <SportsBasketballIcon />,
+  },
+  {
+    key: '05',
+    name: 'Volleyball',
+    emoji: '🏐',
+    icon: <SportsVolleyballIcon />,
+  },
+  {
+    key: '06',
+    name: 'Kabaddi',
+    emoji: '🤼',
+    icon: <SportsKabaddiIcon />,
+  },
+  {
+    key: '07',
+    name: 'Rugby',
+    emoji: '🏉',
+    icon: <SportsRugbyIcon />,
+  },
+  {
+    key: '08',
+    name: 'Hockey',
+    emoji: '🏒',
+    icon: <SportsHockeyIcon />,
   },
 ];
