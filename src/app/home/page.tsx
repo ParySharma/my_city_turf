@@ -5,6 +5,7 @@ import HomePageBanner from './sections/HomePageBanner';
 import WhyChooseTurfReg from './sections/WhyChooseTurfReg';
 import WhyChoosePlayerReg from './sections/WhyChoosePlayerReg';
 import { Divider } from '@mui/material';
+import MarqueeBannerSection from './sections/MarqueeBanner';
 
 const MainHome = () => {
   return (
@@ -13,6 +14,9 @@ const MainHome = () => {
       <MainPageheader />
       {/* banner section */}
       <HomePageBanner />
+
+      {/* marquee banner */}
+      <MarqueeBannerSection />
 
       {/* Why turf featuer */}
       <WhyChooseTurfReg />
